@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dark Mode</title>
+    <script src="https://kit.fontawesome.com/95966c6a48.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="toggle-btn">
+            <i class="fas fa-adjust"></i>
+        </div>
+
+        <div class="container">
+            <div class="content">
+                <div class="content-image">
+                    <img src="./images.jpeg" alt="unleash-beast">
+                </div>
+                <div class="content-text">
+                    <h1 class="title">The Strength Within</h1>
+                    <h2 class="subtitle">Unleash your beasts!</h2>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eaque libero iste!</p>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eaque libero iste!</p>
+
+                    <a href="#" class="cta">Learn more &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        let body = document.body;
+        let toggleBtn = document.querySelector('.toggle-btn');
+
+        let currentTheme = localStorage.getItem('currentTheme')
+        toggleBtn.addEventListener('click', function() {
+            body.classList.toggle('dark-theme')
+        })
+    </script>
+</body>
+
+</html>
